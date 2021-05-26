@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "A normal Sunday",
+      "content": "I didn't get up to much and it was okay."
+    },
+    {
+      "id": 2,
+      "title": "Nice day!",
+      "content": "I got up early, walked the dog and saw some friends for dinner."
+    },
+    {
+      "id": 3,
+      "title": "Tuesday",
+      "content": "boredddd"
+    },
+    {
+      "id": 4,
+      "title": "monday",
+      "content": "not happy"
+    },
+    {
+      "id": 5,
+      "title": "test update 4",
+      "content": "test update 6"
+    },
+    {
+      "id": 7,
+      "title": "test all update",
+      "content": "test all"
+    }
+  ]
+}

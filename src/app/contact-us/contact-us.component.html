@@ -1,0 +1,16 @@
+<div>
+    <br>
+    <h3>Contact us:</h3>
+    <form [formGroup]="contactRef">
+        <div class="col">
+            <input type="text" placeholder="first name" class="form-control" formControlName="firstname"/><br>
+        </div>
+        <div class="col">
+            <input type="text" placeholder="last name" class="form-control" formControlName="lastname"/><br>
+        </div>
+        <input type="button" value="Submit" class="btn btn-outline-dark" (click)="submitMessage()"/>
+        <input type="reset" value="Reset" class="btn btn-outline-dark" (click)="resetForm()"/>
+    </form>
+    <br>
+    <p>{{message}}</p>
+</div>

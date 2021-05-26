@@ -1,0 +1,30 @@
+<div>
+    <br>
+    <h3>All blog posts:</h3>
+    <form *ngIf="showForm" [formGroup]="blogRef">
+        <div class="col">
+            <input type="text" formControlName="title" class="form-control" placeholder="title"/><br>
+        </div>
+        <div class="col">
+            <input type="text" formControlName="content" class="form-control" placeholder="content"/><br>
+        </div>
+        <input type="button" value="Save Changes" class="btn btn-outline-dark" (click)="hideForm()"/>
+    </form>
+    {{message}}
+    <br>
+    <br>
+    <table border="1" class="table">
+        <tr class="thead-dark">
+            <th>Title</th>
+            <th>Content</th>
+        </tr>
+        <tr *ngFor="let blog of blogs">
+            <td>
+                <input type="button" value="update" class="btn btn-outline-dark" (click)="populateForm(blog)"/>
+                <input type="button" value="delete" (click)="deleteBlogPost(blog.id)" class="btn btn-outline-dark"/> 
+                {{blog.title}}
+            </td>
+            <td>{{blog.content}}</td>
+        </tr>
+    </table>
+</div>

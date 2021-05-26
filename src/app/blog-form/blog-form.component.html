@@ -1,0 +1,16 @@
+<div>
+    <br>
+    <h3>Write a new entry:</h3>
+    <form [formGroup]="blogRef">
+        <div class="col">
+            <input type="text" formControlName="title" class="form-control" placeholder="title"/><br>
+        </div>
+        <div class="col">
+            <input type="text" formControlName="content" class="form-control" placeholder="content"/><br>
+        </div>
+        <input type="button" value="Save" (click)="createBlog()" class="btn btn-outline-dark"/>
+        <input type="reset" value="Reset" class="btn btn-outline-dark"/>
+    </form>
+    <br>
+    {{message}}
+</div>
