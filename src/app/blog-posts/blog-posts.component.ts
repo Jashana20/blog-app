@@ -37,7 +37,7 @@ export class BlogPostsComponent implements OnInit {
     this.blogRef.setValue(blog)
   }
 
-  hideForm() {
+  updateBlog() {
     this.showForm = false;
     let blog = this.blogRef.value;
     this.bser.updateBlogDetails(blog).subscribe(result => {
@@ -45,5 +45,4 @@ export class BlogPostsComponent implements OnInit {
       this.bser.retrieveBlogDetails().subscribe(result => this.blogs = result)
     })
   }
-
 }
